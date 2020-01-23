@@ -1,0 +1,14 @@
+name: env_var
+version: 0.0.1
+description: >-
+  Inject environment variables into dart code using annotations and source_gen
+
+environment:
+  sdk: ">=2.3.0 <3.0.0"
+
+dependencies:
+  env_var_annotation:
+    path: ../env_var_annotation
+  analyzer: ">=0.37.0 <0.40.0"
+  build: ^1.0.0
+  source_gen: ^0.9.0

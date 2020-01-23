@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "env_var_annotation",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.3"
+    }
+  ],
+  "generated": "2020-01-23T14:44:33.403835Z",
+  "generator": "pub",
+  "generatorVersion": "2.7.0"
+}
