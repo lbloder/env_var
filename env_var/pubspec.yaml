@@ -8,7 +8,9 @@ environment:
 
 dependencies:
   env_var_annotation:
-    path: ../env_var_annotation
+    git:
+      url: git://github.com/lbloder/env_var.git
+      path: env_var_annotation
   analyzer: ">=0.37.0 <0.40.0"
   build: ^1.0.0
   source_gen: ^0.9.0
