@@ -165,16 +165,20 @@ packages:
   env_var:
     dependency: "direct dev"
     description:
-      path: "../env_var"
-      relative: true
-    source: path
+      path: env_var
+      ref: HEAD
+      resolved-ref: c5c40ef9c233fac7d89e92f55bc75a025764b27c
+      url: "git://github.com/lbloder/env_var.git"
+    source: git
     version: "0.0.1"
   env_var_annotation:
     dependency: "direct main"
     description:
-      path: "../env_var_annotation"
-      relative: true
-    source: path
+      path: env_var_annotation
+      ref: HEAD
+      resolved-ref: c5c40ef9c233fac7d89e92f55bc75a025764b27c
+      url: "git://github.com/lbloder/env_var.git"
+    source: git
     version: "0.0.1"
   fixnum:
     dependency: transitive
