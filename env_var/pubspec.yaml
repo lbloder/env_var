@@ -4,13 +4,13 @@ description: >-
   Inject environment variables into dart code using annotations and source_gen
 
 environment:
-  sdk: ">=2.3.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   env_var_annotation:
     git:
       url: git://github.com/lbloder/env_var.git
       path: env_var_annotation
-  analyzer: ">=0.37.0 <0.40.0"
-  build: ^1.0.0
-  source_gen: ^0.9.0
+  analyzer: ^1.3.0
+  build: ^2.0.0
+  source_gen: ^1.0.0

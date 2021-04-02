@@ -11,16 +11,15 @@ import 'package:env_var_annotation/annotations.dart';
 
 class EnvVarGenerator extends GeneratorForAnnotation<Env> {
   @override
-  String generateForAnnotatedElement(
+  String? generateForAnnotatedElement(
       Element element, ConstantReader annotation, BuildStep buildStep) {
     if (element.kind != ElementKind.CLASS) {
       return null;
     }
       final List<DartObject> list = annotation.read('envVars').listValue;
-      //final List<BuildConfigField> list = annotation.read('buildConfigFields').listValue.cast();
       final List<String> stringList = list.map((e) {
-        final name = e.getField("name").toStringValue();
-        final value = e.getField("value").toStringValue();
+        final name = e.getField("name")?.toStringValue();
+        final value = e.getField("value")?.toStringValue();
         return "const String ${name} = \"${Platform.environment[value]}\";";
       }).toList();
       return stringList.join("\n");
